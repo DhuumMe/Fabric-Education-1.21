@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "education",
+	"version": "${version}",
+	"name": "Education",
+	"description": "Minecraft: Education by DhuumMe",
+	"authors": [
+		"DhuumMe"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/education/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dhuumme.education.Education"
+		],
+		"fabric-datagen": [
+			"net.dhuumme.education.EducationDataGenerator"
+		],
+		"client": [
+			"net.dhuumme.education.EducationClient"
+		]
+	},
+	"mixins": [
+		"education.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
